@@ -25,7 +25,7 @@
     }
   },
   "changelog": {
-    "repo": "jaredpalmer/razzle",
+    "repo": "microcasting/razzle",
     "labels": {
       "tag: new feature": ":rocket: New Feature",
       "tag: breaking change": ":boom: Breaking Change",

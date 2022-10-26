@@ -685,7 +685,7 @@ module.exports = (
         if (!IS_DEV_ENV) {
           config.plugins.push(
             new webpack.optimize.LimitChunkCountPlugin({
-              maxChunks: 1,
+              maxChunks: 100,
             })
           );
           config.optimization = {
@@ -1078,8 +1078,8 @@ module.exports = (
       });
     }
     if (razzleOptions.debug.config) {
-      console.log(`Printing webpack config for ${target} target`);
-      console.log(util.inspect(config, {depth: null}));
+      // console.log(`Printing webpack config for ${target} target`);
+      // console.log(util.inspect(config, {depth: null}));
     }
     resolve(config);
   });
